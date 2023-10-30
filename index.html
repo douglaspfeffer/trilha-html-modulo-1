@@ -7,56 +7,104 @@
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+    <h1 id="start">Módulo 1 - Primeiros Passos com HTML</h1>
     <hr />
 
     <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+        <li><a href="#ferramentas">Ferramentas Utilizadas</a></li>
+        <li><a href="#estrutura">Estrutura básica do HTML</li>
+        <li><a href="#tags">Falando sobre as tags</i>?</a></li>
+        <li><a href="#lista">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#referencias">Links de referências</a></li>
     </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="ferramentas">Ferramentas Utilizadas</h2>
+    <p>Antes de começar a desenvolver o seu primeiro site em HTML, é necessário ter algumas ferramentas que irão te auxiliar no processo.</p>
+    <p>A primeira ferramenta que recomendo é instalar em seu computador/notebook o <strong>Visual Studio Code</strong>, que é uma ferramenta <i>Open Source</i>, ou seja, gratuita.</p>
+    <p>Baixe a ferramenta acessando o link: <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a> </p>
+    <a href="#start">Voltar ao início</a>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="estrutura">Estrutura básica do HTML</h2>
+    <p>Já com o <strong>Visual Studio Code</strong> instalado, o primeiro passo é criar um arquivo que por convenção se chama <i>index.html</i>, que será a sua página inicial.</p>
+    <p>O HTML consiste em basicamente 3 partes: </p>
+    <ol>
+      <li>&lt;html&gt;&lt;/html&gt;</li>
+      <li>&lt;head&gt;&lt;/head&gt;</li>
+      <li>&lt;body&gt;&lt;/body&gt;</li>
+    </ol>
+    <p>No <i>html</i> será onde vai ter todo o seu código, que será onde o navegador vai entender que é de fato um HTML</p>
+    <p>No <i>head</i> será o cabeçalho da sua página e no <i>bodyFalando sobre as tags</i> será todo o texto que o leitor irá visualizar</p>
+    <p>Sua estrutura é basicamente da seguinte forma:</p>
+    <p>&lt;html&gt;</p>
+    <p>........&lt;head&gt;</p>
+    <p>........&lt;/head&gt;</p>
+    <p>........&lt;body&gt;</p>
+    <p>........&lt;/body&gt;</p>
+    <p>&lt;/html&gt;</p>
+    <a href="#start">Voltar ao início</a>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="tags">Falando sobre as tags</i>?</h2>
+    <p>As tags são muito importantes para que você possa criar na sua página títulos, sub-títulos, parágrafos, citações, listas, marcações etc</p>
+    <p>As tags sempre terão o formado de <strong>&lt;tag&gt;</strong> e aqui no meio será o seu conteúdo <strong>&lt;/tag&gt;</strong></p>
+    <p>Começando pela tag de h1 até h6, elas representam o título da sua página, tendo em consideração que h1 é o maior e h6 é o menor</p>
+    <p>Por exemplo, o título dessa página é <strong>Módulo I - Primeiros passos com HTML</strong> e para que o título ficasse grande no início da página, foi utilizado a tag h1, ficando da seguinte forma <strong>&lt;h1&gt;Módulo 1 - Primeiros Passos com HTML&lt;/h1&gt;</strong> e como esse texto é algo que o leitor precisa visualizar, então a tag ficou dentro da tag <i>body</i></p>
+    <p>Segue alguns exemplos abaixo:</p>
+    <h1>Título em H1</h1>
+    <h2>Título em H2</h2>
+    <h3>Título em H3</h3>
+    <h4>Título em H4</h4>
+    <h5>Título em H5</h5>
+    <h6>Título em H6</h6>
+    <p>A próxima tag é a <strong>&lt;p&gt;</strong><strong>&lt;/p&gt;</strong>, que representa um parágrafo. Então se você quer escrever apenas um texto normal, precisará apenas escrever o texto dentro da tag <strong>&lt;p&gt;</strong>aqui vai o seu texto<strong>&lt;/p&gt;</strong></p>
+    <p>Você pode deixar um texto em <strong>negrito</strong> utilizando a tag <strong>&lt;strong&gt;</strong>aqui vai o seu texto<strong>&lt;/strong&gt;</strong></p>
+    <p>Você pode deixar um texto <small>pequeno</small> utilizando a tag <strong>&lt;small&gt;</strong>aqui vai o seu texto<strong>&lt;/small&gt;</strong></p>
+    <p>Você pode deixar um link <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a> utilizando a tag <strong>&lt;a href="url" target="_blank"&gt;</strong>aqui vai o texto do link<strong>&lt;/a&gt;</strong></p>
+    <p>Pode ser que você queira marcar algo importante da sua página para chamar atenção so seu leitor.</p>
+    <p>Você pode simplesmente <mark>marcar</mark> como um marca-texto utilizando <strong>&lt;mark&gt;</strong>aqui vai o seu texto<strong>&lt;/mark&gt;</strong></p>
+    <p>Você pode simplesmente <u>sublinhar</u> com um underline utilizando <strong>&lt;u&gt;</strong>aqui vai o seu texto<strong>&lt;/u&gt;</strong></p>
+    <p>Você pode também mudar a <font color="red">cor</font> do texto utilizando <strong>&lt;font color="colorName"&gt;</strong>aqui vai o seu texto<strong>&lt;/font&gt;</strong> e em colorName você digita a cor em inglês, no meu caso eu digitei "red" </p>
+    <p>Você também pode até mesmo criar um delimitador como o abaixo na cor cinza utilizando a tag <strong>&lt;hr&gt;</strong></p>
+    <hr>
+    <p>Você pode criar citações como a abaixo utilizando <strong>&lt;i&gt;</strong><strong>&lt;blockquote&gt;</strong>aqui vai a sua citação<strong>&lt;/blockquote&gt;</strong><strong>&lt;/i&gt;</strong></p>
+    <i><blockquote>No matter how much you know, there is always more to learn. After all, life is an eternal learning experience</blockquote></i>
+    <p>A tag <strong>&lt;blockquote&gt;</strong>aqui vai o seu texto<strong>&lt;/blockquote&gt;</strong> cria a citação e a tag <strong>&lt;i&gt;</strong>aqui vai o seu texto<strong>&lt;/i&gt;</strong> deixa op texto em itálico</p>
+    <p>E você também pode criar listar ordenadas como</p>
+    <a href="#start">Voltar ao início</a>
+    
+    <h2 id="lista">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <p>A lista ordenada é uma lista que vai seguir uma sequencia numérica em colunas como no exemplo abaixo</p>
+    <ol>
+      <li>Item</li>
+      <li>Item</li>
+    </ol>
+    <p>E a lista não ordenada já não tem o numerador como no exemplo abaixo</p>
+    <ul>
+      <li>Item</li>
+      <li>Item</li>
+    </ul>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <p>Para criar a lista ordenada basta utilizar</p>
+    <p>&lt;ol&gt;</p>
+    <p>........&lt;li&gt;Item&lt;/li&gt;</p>
+    <p>........&lt;li&gt;Item&lt;/li&gt;</p>
+    <p>&lt;/ol&gt;</p>
+    <p>E listas não ordenadas como</p>
+    
+    <p>Para criar a lista não ordenada basta utilizar</p>
+    <p>&lt;ul&gt;</p>
+    <p>........&lt;li&gt;Item&lt;/li&gt;</p>
+    <p>........&lt;li&gt;Item&lt;/li&gt;</p>
+    <p>&lt;/ul&gt;</p>
+    <a href="#start">Voltar ao início</a>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
+    <h2 id="referencias">Links de referências</h2>
     <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+        <li><a href="https://www.dio.me/" target="_blank">http://dio.me</a></li>
+        <li><a href="https://www.w3.org/" target="_blank">https://www.w3.org/</a></li>
     </ul>
+    <a href="#start">Voltar ao início</a>
 
 </body>
 </html>
